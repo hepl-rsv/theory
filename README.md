@@ -13,3 +13,11 @@
 Comme expliqué lors de l'introduction au cours, les quelques premières séances du cours vont couvrir les bases théoriques nécéssaires pour passer à la pratique.
 
 Ce *repository* regroupe les slides utilisés pour ces cours.
+
+Ils sont rédigés en utilisant [BespokeJS](https://github.com/bespokejs/bespoke), expurgé de la _demi-tonne_ de gifs animés inutiles dont j'avais blindé la présentation.
+
+* Partie 1 : [réseaux, adressage, noms de domaines](./part-one)
+
+* * *
+
+Les textures utilisées sur certains slides proviennent de [subtlepatterns.com](http://subtlepatterns.com).

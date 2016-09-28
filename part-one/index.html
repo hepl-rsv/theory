@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>HEPL - Bachelier en Techniques Graphiques : Réseaux &amp; Serveurs</title>
+
+        <link rel="stylesheet" href="../_shared/css/main.css" />
+    </head>
+
+    <body>
+        <article>
+            <section data-bespoke-state="intro">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            Bachelier en Techniques graphiques <small>- Finalité Techniques infographiques</small>
+                        </div>
+                    </div>
+                    <h1>Réseaux &amp; Serveurs</h1>
+                    <div class="byline">
+                        <div class="classy">
+                            HEPL - Bloc 2
+                        </div>
+                    </div>
+                    <h3>2016-2017</h3>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">On va faire quoi, dans ce cours ?!</div>
+                    </div>
+                    <h2>...des réseaux ! Et des serveurs !</h2>
+                    <div class="byline">
+                        <div class="classy">
+                            on va creuser l'truc
+                        </div>
+                    </div>
+                    <h4>le programme est résumé ici : <kbd>https://github.com/hepl-rsv/vadmekom</kbd></h4>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            Attention !
+                        </div>
+                    </div>
+                    <h4>
+                        On ne va pas faire de vous des
+                    </h4>
+                    <h3>Administrateurs système</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            (on en a déjà assez en face)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            mais…
+                        </div>
+                    </div>
+                    <h4>Vous allez souvent devoir</h4>
+                    <h3>gérer ça vous-même</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            (pour des clients ou pour vous)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …ou aussi…
+                        </div>
+                    </div>
+                    <h4>devoir agir</h4>
+                    <h3>pour ou avec</h3>
+                    <h4>un admin sys</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            (du coup, c'est pas plus mal de les comprendre)
+                        </div>
+                    </div>
+                    <div class="byline">
+                        <div class="classy">
+                            (mais on va pas s'attarder sur certains trucs)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            donc,
+                        </div>
+                    </div>
+                    <h4>on va commencer par</h4>
+                    <h3>un peu de théorie</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            (deux ou trois cours, pas plus)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline"></div>
+                    <h4>puis on fera encore</h4>
+                    <h3>de la théorie</h3>
+                    <h4>mais directement</h4>
+                    <h3>mise en pratique</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">bref</div>
+                    </div>
+                    <h3>commençons.</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline"></div>
+                    <h3>C'est quoi, un <em>réseau</em>?</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline"></div>
+                    <h3>Des machines,</h3>
+                    <h4>reliées entre elles,</h4>
+                    <h3>qui échangent des informations.</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline"></div>
+                    <img src="./img/home-networking-diagram.png" class="img-white" alt="diagramme réseau" />
+                    <div class="byline">
+                        <div class="classy">réseau domestique typique</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            Composants importants
+                        </div>
+                    </div>
+                    <h3>La passerelle</h3>
+                    <h4>(gateway)</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            (lie les réseaux entre eux)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            Composants importants
+                        </div>
+                    </div>
+                    <h3>Le routeur</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            (s'assure que chaque paquet de données arrive au bon destinataire)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            …généralement, dans les réseaux domestiques,
+                        </div>
+                    </div>
+                    <h3>Le routeur et la passerelle sont couplées à un modem</h3>
+                    <h4>et forment une seule machine</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            (qu'on appelle souvent <strong>box internet</strong>)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline"></div>
+                    <h3>Et Internet ?</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">comme son nom l'indique :</div>
+                    </div>
+                    <h4>Internet</h4>
+                    <h3>c'est un réseau de réseaux…</h3>
+                    <div class="byline">
+                        <div class="classy">…de réseaux de réseaux de réseaux…</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            on a même tenté d'en faire une carte :
+                        </div>
+                    </div>
+                    <img src="./img/internet_map.jpg" class="img-adjust" alt="carte de l'internet" />
+                    <div class="byline">
+                        <div class="classy">(partielle et déjà dépassée)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">(ça ressemble à un immense filet)</div>
+                    </div>
+                    <h4>ou à une</h4>
+                    <h3>toile d'araignée</h3>
+                    <h4>(World Wide Web)</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            et chaque extrémité est appelée un "nœud"
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Mais comment on s'y retrouve ?</div>
+                    </div>
+                    <h4>Un peu comme à la Poste,</h4>
+                    <h3>on a besoin d'un système d'adresses</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            …les <strong>adresses MAC</strong> &amp; les <strong>adresses IP</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse MAC</div>
+                    </div>
+                    <h4>Propre à chaque interface connectée</h4>
+                    <h3><em>sensée</em> être unique au monde</h3>
+                    <div class="byline">
+                        <div class="classy">
+                            <strong>Media Access Control</strong>, rien à voir avec Apple
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse MAC</div>
+                    </div>
+                    <h4>6 groupes de 2 chiffres hexadécimaux</h4>
+                    <h3><kbd>5E:FF:56:A2:AF:15</kbd></h3>
+                    <div class="byline">
+                        <div class="classy">
+                            Ce système est <strong>couplé</strong> aux adresses IP…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IP</div>
+                    </div>
+                    <h4>Le routeur attribue à chaque interface connectée</h4>
+                    <h3>une adresse IP</h3>
+                    <h4>liée à l'adresse MAC</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            <strong>Internet Protocol</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IP</div>
+                    </div>
+                    <h4>Cette liaison peut être définitive</h4>
+                    <h3>(on parle d'IP <em>statique</em>)</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IP</div>
+                    </div>
+                    <h4>…ou être dynamique, via un système appelé</h4>
+                    <h3>DHCP</h3>
+                    <h4>qui attribue une adresse libre lors de la connexion</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            On utilise communément deux versions des adresses IP…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv4</div>
+                    </div>
+                    <h4>4 groupes de nombres décimaux entre <kbd>0</kbd> et <kbd>255</kbd></h4>
+                    <h3><kbd>193.190.122.7</kbd></h3>
+                    <div class="byline">
+                        <div class="classy">
+                            (ce qu'on utilisera le plus souvent)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv4: plages réservées</div>
+                    </div>
+                    <h4>Certaines plages d'IP (ou <em>range</em>)</h4>
+                    <h3>sont réservées</h3>
+                    <h4>et ne peuvent pas être utilisées sur Internet</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            on verra le plus souvent les deux suivantes…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv4: plages réservées</div>
+                    </div>
+                    <h3><kbd>127.0.0.1</kbd></h3>
+                    <h5>(en fait toutes les adresses entre 127.0.0.1 et 127.255.255.255)</h5>
+                    <h4>désigne toujours l'interface courante (<em>loopback</em>)</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            elle a un alias nommé <kbd>localhost</kbd>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv4: plages réservées</div>
+                    </div>
+                    <h3><kbd>192.168.xxx.xxx</kbd></h3>
+                    <h4>adresses <em>privées</em>, utilisées dans les réseaux locaux</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            traditionnellement, la <em>gateway</em> a l'adresse <kbd>192.168.1.1</kbd>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv4: disponibilité</div>
+                    </div>
+                    <h4>Il existe</h4>
+                    <h3><kbd>4,294,967,296</kbd> d'adresses IPv4 <em>possibles</em></h3>
+                    <div class="byline">
+                        <div class="classy">
+                            sachant qu'une partie significative est <em>réservée</em>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv4: disponibilité</div>
+                    </div>
+                    <h4>Lors des débuts des réseaux de réseaux, il était <strong>impensable</strong> <br />d'avoir autant de machines connectées un jour…</h4>
+                    <h5>et pourtant…</h5>
+                    <h4>le 3 février 2011, le dernier bloc d'adresses libres était attribué</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            (on est pas réellement en pénurie, on recycle, on se débrouille)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv6</div>
+                    </div>
+                    <h4>8 groupes de 4 chiffres hexadécimaux</h4>
+                    <h3><kbd>2001:0db8:0000:85a3:0000:0000:ac1f:8001</kbd></h3>
+                    <div class="byline">
+                        <div class="classy">
+                            on peut abréger les 0 non-significatifs
+                        </div>
+                    </div>
+                    <h4><kbd>2001:db8:0:85a3:0:0:ac1f:8001</kbd></h4>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv6 : disponibilité</div>
+                    </div>
+                    <h4>Il existe</h4>
+                    <h3><kbd>±3.4&times;10<sup>38</sup></kbd> d'adresses IPv6 <em>possibles</em></h3>
+                    <div class="byline">
+                        <div class="classy">
+                            on a de la marge…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Adresse IPv6 : disponibilité</div>
+                    </div>
+                    <h4>Il faudrait</h4>
+                    <h3>667 millions de milliards</h3>
+                    <h4>d'appareils sur</h4>
+                    <h3>chaque <span style="text-transform: lowercase;">mm</span><sup>2</sup></h3>
+                    <h4>de la planète pour saturer le système.</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            on a <strong>vraiment</strong> de la marge…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Chaque machine a son adresse IP</div>
+                    </div>
+                    <h4>On peut généralement accéder à un site via son <em>adresse IP</em>, par exemple</h4>
+                    <h3><kbd>193.190.122.7</kbd></h3>
+                    <h4>pour le site de la province de Liège</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            mais c'est quand même pas facile à retenir, toutes ces adresses…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS</div>
+                    </div>
+                    <h4>On utilise un système de nommage, le</h4>
+                    <h3>DNS (Domain Name System)</h3>
+                    <h4>pour substituer les adresses IP à des noms plus facile à retenir</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS</div>
+                    </div>
+                    <h4>Chaque IP est associée à une ou plusieurs adresses</h4>
+                    <h3><small>ou</small> "nom de domaine"</h3>
+                    <div class="byline">
+                        <div class="classy">qui suivent toujours la même structure…</div>
+                    </div>
+                    <h3>
+                        <kbd><em class="light">subdomain.</em>domain.tld</kbd>
+                    </h3>
+                    <div class="byline">
+                        <div class="classy">
+                            comme pour les adresses postales, on commence par la fin…
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : TLD</div>
+                    </div>
+                    <h4><kbd><span class="light">subdomain.domain</span>.tld</kbd></h4>
+                    <h4>Domaine de premier niveau (Top Level Domain)</h4>
+                    <div class="byline">
+                        <div class="classy">comprends</div>
+                    </div>
+                    <h4>les domaines nationaux</h4>
+                    <h4>
+                        <kbd>.be</kbd>, <kbd>.fr</kbd>, <kbd>.nl</kbd>…
+                    </h4>
+                    <div class="byline">
+                        <div class="classy">
+                            et
+                        </div>
+                    </div>
+                    <h4>les domaines génériques</h4>
+                    <h4>
+                        <kbd>.com</kbd>, <kbd>.org</kbd>, <kbd>.net</kbd>, <kbd>.xxx</kbd>, <kbd>.me</kbd>…
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : TLD nationaux</div>
+                    </div>
+                    <h4>Gérés par un organisme propre à chaque état <small>(approuvé par l'ICANN)</small></h4>
+                    <div class="byline">
+                        <div class="classy">qui détermine les critères</div>
+                    </div>
+                    <h4>pour l'obtention d'un domaine de ce TLD</h4>
+                    <div class="byline">
+                        <div class="classy">Parfois c'est libre, parfois pas.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : TLD génériques</div>
+                    </div>
+                    <h4>Gérés par des sociétés qui en on reçu le droit <small>(de la part de l'ICANN)</small></h4>
+                    <div class="byline">
+                        <div class="classy">(et c'est quoi l'ICANN ?)</div>
+                    </div>
+                    <h4>Internet Corporation for Assigned Names and Numbers</h4>
+                    <div class="byline">
+                        <div class="classy">L'organisation en charge de réguler tout ça.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : domaine</div>
+                    </div>
+                    <h4><kbd><span class="light">subdomain.</span>domain<span class="light">.tld</span></kbd></h4>
+                    <h4>Domaine de second niveau</h4>
+                    <div class="byline">
+                        <div class="classy">couplé au TLD, il forme le</div>
+                    </div>
+                    <h4>nom de domaine</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : domaine</div>
+                    </div>
+                    <h4>Un nom de domaine ne s'achète pas!</h4>
+                    <h3>Il se loue</h3>
+                    <h4>pour une durée renouvelable</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            généralement de 1 an à 10 ans, auprès
+                        </div>
+                    </div>
+                    <h3>d'un <strong>registrar</strong></h3>
+                    <div class="byline">
+                        <div class="classy">
+                            Sociétés qui ont reçu une license pour louer des domaines dans un TLD donné.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : domaine</div>
+                    </div>
+                    <h4>Un bon nom de domaine est un nom de domaine dont</h4>
+                    <h3>on se rappelle</h3>
+                    <div class="byline">
+                        <div class="classy">soyez créatifs… mais brefs.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : sous-domaine</div>
+                    </div>
+                    <h4><kbd>subdomain.<span class="light">domain.tld</span></kbd></h4>
+                    <h4>Sous-domaine(s)</h4>
+                    <div class="byline">
+                        <div class="classy">oui, on peut en avoir plusieurs</div>
+                    </div>
+                    <h4>Facultatifs. Configurés par le serveur.</h4>
+                    <div class="byline">
+                        <div class="classy">on verra ensemble comment faire</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Serveurs DNS</div>
+                    </div>
+                    <h4>On associe un ou plusieurs noms de domaine à une adresse IP</h4>
+                    <div class="byline">
+                        <div class="classy">via</div>
+                    </div>
+                    <h3>Des serveurs DNS</h3>
+                    <h4>Des immenses listes de domaines.</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Serveurs DNS</div>
+                    </div>
+                    <h4>On exige qu'un domaine soit renseigné sur au moins deux serveurs DNS <strong>de référence</strong></h4>
+                    <div class="byline"></div>
+                    <h4>Un système de réplication copie ces infos aux 4 coins de la planète</h4>
+                    <div class="byline">
+                        <div class="classy">Pratique en cas de panne…</div>
+                    </div>
+                    <div class="byline">
+                        <div class="classy">…au prix d'un délai de propagation allant <em>parfois</em> jusqu'à 48h<br />(bien qu'à l'heure actuelle, c'est généralement bien plus court)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>En Europe, les registrars les plus connus, fiables et réputés sont :</h4>
+                    <div class="byline">
+                        <div class="classy">…un peu de pub gratuite…</div>
+                    </div>
+                    <h4><kbd>ovh.com</kbd></h4>
+                    <h4><kbd>gandi.net</kbd></h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>Lors de la location d'un nom de domaine intervient la</h4>
+                    <h3>notion de <em>contacts</em></h3>
+                    <div class="byline">
+                        <div class="classy">il en existe 4 :</div>
+                    </div>
+                    <ul>
+                        <li>Propriétaire <em>(Owner)</em></li>
+                        <li>Contact Administratif <em>(Administrative contact)</em></li>
+                        <li>Contact Technique <em>(Technical contact)</em></li>
+                        <li>Contact Facturation <em>(Billing contact)</em></li>
+                    </ul>
+                    <div class="byline">
+                        <div class="classy">Ça peut représenter 4 personnes différentes, ou moins</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h3>Propriétaire</h3>
+                    <h4>détient la propriété légale sur le domaine<br />pendant la durée de location</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h3>Contact administratif</h3>
+                    <h4>chargé de répondre aux questions légales au sujet du domaine</h4>
+                    <div class="byline">
+                        <div class="classy">en règle générale, c'est <em>aussi</em> le propriétaire</div>
+                    </div>
+                    <p>Il peut :</p>
+                    <ul>
+                        <li>renouveler le nom de domaine</li>
+                        <li>changer les serveurs DNS</li>
+                        <li>modifier les informations relatives aux contacts</li>
+                        <li>changer de registrar</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h3>Contact technique</h3>
+                    <h4>chargé de prendre les décisions techniques</h4>
+                    <div class="byline">
+                        <div class="classy">la plupart du temps, <em>vous</em></div>
+                    </div>
+                    <p>Il peut :</p>
+                    <ul>
+                        <li>changer les serveurs DNS</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h3>Contact facturation</h3>
+                    <h4>chargé des paiements</h4>
+                    <div class="byline">
+                        <div class="classy">(c'est aussi lui qui reçoit les rappels pour les renouvellements)</div>
+                    </div>
+                    <p>Il peut :</p>
+                    <ul>
+                        <li>renouveler le nom de domaine</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>Un domaine a également un</h4>
+                    <h3>statut</h3>
+                    <div class="byline">
+                        <div class="classy">indiquant sa disponibilité</div>
+                    </div>
+                    <ul>
+                        <li>Available (disponible à l'usage)</li>
+                        <li>Registered (déjà utilisé et actif)</li>
+                        <li>On hold (actif et verrouillé, en cours de litige)</li>
+                        <li>Quarantine (désactivé en attente de renouvellement ou d'abandon)</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>Ces informations, ainsi que le statut du domaine,</h4>
+                    <h4>peuvent être obtenue <em>via</em> une requête</h4>
+                    <h3><kbd>whois</kbd></h3>
+                    <div class="byline">
+                        <div class="classy">certains registrars offrent des services de protection contre le whois,<br />ne montrant que des infos minimales</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>Quand un domaine n'est <em>pas</em> disponible,</h4>
+                    <h4>il est possible qu'il soit en</h4>
+                    <h3>parking</h3>
+                    <div class="byline">
+                        <div class="classy">le domaine n'est pas utilisé pour un site et son traffic est redirigé vers de la pub</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>…dans le cas où un domaine est en parking (ou indisponible)</h4>
+                    <h3>c'est la merde</h3>
+                    <div class="byline">
+                        <div class="classy">les parqueurs font leur business sur la revente (souvent à prix d'or) de domaines</div>
+                    </div>
+                    <h4>Dans les faits, les litiges sont souvent longs et couteux à régler</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">DNS : registrar</div>
+                    </div>
+                    <h4>En règle générale, un nom de domaine ne coûte pas grand chose…</h4>
+                    <div class="byline">
+                        <div class="classy">…ça dépend surtout du TLD, mais, à titre d'exemple :</div>
+                    </div>
+                    <h4><kbd>domaine.be</kbd> - <strong>8.39€/an</strong> (ovh)</h4>
+                    <h4><kbd>domaine.com</kbd> - <strong>15.05€/an</strong> (gandi)</h4>
+                    <div class="byline">
+                        <div class="classy">(fin août 2016)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-four">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">À vous de payer!</div>
+                    </div>
+                    <h4>Cette année, vous allez créer votre portfolio.</h4>
+                    <h5>(et pas mal d'autres trucs)</h5>
+                    <div class="byline">
+                        <div class="classy">…c'est le moment de réfléchir à un nom de domaine.</div>
+                    </div>
+                    <h4>faites quelques recherches, et commandez le vôtre</h4>
+                    <div class="byline">
+                        <div class="classy">on va l'utiliser le long du cours, et enfin pour votre portfolio.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline"></div>
+                    <h4>fin de la première partie</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+        </article>
+        <script type="text/javascript">
+          WebFontConfig = { google: { families: [ 'Tauri::latin', 'Alegreya:400italic:latin' ] } };
+          (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+          })();
+        </script>
+        <script src="../_shared/js/bespoke.js"></script>
+        <script src="../_shared/js/deck.js"></script>
+    </body>
+</html>
