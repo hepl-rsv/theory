@@ -1,0 +1,15 @@
+# hepl-rsv/theory
+
+> Slides & notes for the theory courses of RSV courses given at HEPL.
+
+* * *
+
+**Note:** the school where the course is given, the [HEPL](http://www.provincedeliege.be/hauteecole) from Liège, Belgium, is a french-speaking school. From this point, the instruction will be in french. Sorry.
+
+* * *
+
+## Réseaux & Serveurs : théorie
+
+Comme expliqué lors de l'introduction au cours, les quelques premières séances du cours vont couvrir les bases théoriques nécéssaires pour passer à la pratique.
+
+Ce *repository* regroupe les slides utilisés pour ces cours.
