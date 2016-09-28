@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>HEPL - Bachelier en Techniques Graphiques : Réseaux &amp; Serveurs</title>
+
+        <link rel="stylesheet" href="../_shared/css/main.css" />
+    </head>
+
+    <body>
+        <article>
+            <section data-bespoke-state="intro">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">
+                            Bachelier en Techniques graphiques <small>- Finalité Techniques infographiques</small>
+                        </div>
+                    </div>
+                    <h1>Réseaux &amp; Serveurs</h1>
+                    <div class="byline">
+                        <div class="classy">
+                            HEPL - Bloc 2
+                        </div>
+                    </div>
+                    <h3>2016-2017</h3>
+                    <div class="byline">
+                        <div class="classy">Théorie - partie 2</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles</div>
+                    </div>
+                    <h4>Il existe deux modèles de représentation des communications entre ordinateurs :</h4>
+                    <h3>Le modèle OSI</h3>
+                    <h4>et</h4>
+                    <h3>Le modèle TCP/IP</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline"></div>
+                    <img src="./img/modeles-osi-tcp.png" class="img-white" alt="Comparaison des modèles OSI &amp; TCP/IP" />
+                    <div class="byline">
+                        <div class="classy">comparaison des modèles OSI &amp; TCP/IP</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles</div>
+                    </div>
+                    <h4>En tant que <em>travailleurs du web</em>, on va surtout utiliser</h4>
+                    <h3>Le modèle <strong>TCP/IP</strong></h3>
+                    <div class="byline">
+                        <div class="classy">Aussi appelé <em>Pile TCP/IP</em>, composée de 4 couches :</div>
+                    </div>
+                    <ol reversed="reversed">
+                        <li>Application</li>
+                        <li>Transport</li>
+                        <li>Internet</li>
+                        <li>Accès réseau</li>
+                    </ol>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles : TCP/IP</div>
+                    </div>
+                    <h4>Couche 1:</h4>
+                    <h3>Accès réseau</h3>
+                    <div class="byline">
+                        <div class="classy">de loin la moins intéressante pour nous</div>
+                    </div>
+                    <h4>Concerne la connexion <em>physique</em> au réseau</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            <kbd>Ethernet</kbd>,
+                            <kbd>Wi-Fi</kbd>, …
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles : TCP/IP</div>
+                    </div>
+                    <h4>Couche 2:</h4>
+                    <h3>Internet</h3>
+                    <div class="byline"></div>
+                    <h4>Concerne l'acheminement des données d'un point à l'autre d'un réseau</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            Adressage <kbd>IP</kbd>, on a vu ça lors de la première partie
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles : TCP/IP</div>
+                    </div>
+                    <h4>Couche 3:</h4>
+                    <h3>Transport</h3>
+                    <div class="byline"></div>
+                    <h4>Concerne la gestion de la fiabilité et de l'ordre des échanges</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            <kbd>TCP</kbd>, <kbd>UCP</kbd>, …
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles : TCP/IP &rsaquo; Transport</div>
+                    </div>
+                    <h4>
+                        Le protocole de transport <kbd>TCP</kbd>, avec connexion, <br />
+                        s'assure de l'arrivée des données<br />
+                        sans altération, dans l'ordre.
+                    </h4>
+                    <div class="byline">
+                        <div class="classy">(avec retransmission des données perdues et élimination des duplicats)</div>
+                    </div>
+                    <h4>Plus <em>lent</em> qu'UDP mais plus <em>fiable</em>.</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles : TCP/IP &rsaquo; Transport</div>
+                    </div>
+                    <h4>
+                        Le protocole de transport <kbd>UDP</kbd>, sans connexion,<br />
+                        transfère les données sans s'assurer de leur arrivée,<br />
+                        ni de leur ordre.
+                    </h4>
+                    <div class="byline"></div>
+                    <h4>Plus <em>rapide</em> qu'UDP mais moins <em>fiable</em>.</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            Utilisé pour les flux audio ou vidéo (l'<strong>application</strong> se charge de la gestion des données)<br />
+                            ou pour les données rapides où la connexion serait trop coûteuse (<kbd>DNS</kbd>, …)
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Modèles : TCP/IP</div>
+                    </div>
+                    <h4>Couche 4:</h4>
+                    <h3>Application</h3>
+                    <div class="byline"></div>
+                    <h4>Couche contenant la plupart des programmes intéragissant avec le réseau</h4>
+                    <div class="byline">
+                        <div class="classy">
+                            <kbd>HTTP</kbd>, <kbd>FTP</kbd>, <kbd>SMTP</kbd>, <kbd>SSH</kbd>, <kbd>DNS</kbd>, …
+                        </div>
+                    </div>
+                    <h4><em>Attention :</em> on ne parle pas d'application au sens <em>logiciel</em>.</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">TCP/IP : port de communication</div>
+                    </div>
+                    <h4>Chaque application sur le réseau utilise</h4>
+                    <h3>un ou plusieurs <em>port</em> de communication…</h3>
+                    <div class="byline">
+                        <div class="classy">étymologiquement, ça vient de "porte"</div>
+                    </div>
+                    <h4>…associé à un protocole de transport (TCP ou UDP)</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">TCP/IP : port de communication</div>
+                    </div>
+                    <h4>Chaque port utilise un</h4>
+                    <h3>numéro d'identification</h3>
+                    <div class="byline">
+                        <div class="classy">(codé sur 16 bits)</div>
+                    </div>
+                    <h4>il y a donc</h4>
+                    <h3>65 536</h3>
+                    <h4>disponibles par machine</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">TCP/IP : port de communication</div>
+                    </div>
+                    <h4>Chaque application est libre d'utiliser l'un ou l'autre</h4>
+                    <h3>port disponible,</h3>
+                    <h4>mais il existe une liste de</h4>
+                    <h3><em>ports bien connus</em></h3>
+                    <h4>traditionnellement associés à une application</h4>
+                    <div class="byline">
+                        <div class="classy">quelques exemples parmi les plus connus :</div>
+                    </div>
+                    <ul>
+                        <li><kbd>HTTP</kbd> sur le port <strong>80</strong> (<kbd>TCP</kbd>)</li>
+                        <li><kbd>SSH</kbd> sur le port <strong>22</strong> (<kbd>TCP</kbd>)</li>
+                        <li><kbd>DNS</kbd> sur le port <strong>53</strong> (<kbd>UDP</kbd>, parfois <kbd>TCP</kbd>)</li>
+                        <li><kbd>FTP</kbd> sur le port <strong>21</strong> (<kbd>TCP</kbd>)</li>
+                        <li><kbd>SMTP</kbd> sur le port <strong>25</strong> (<kbd>TCP</kbd>)</li>
+                        <li><kbd>HTTPS</kbd> sur le port <strong>443</strong> (<kbd>TCP</kbd>)</li>
+                        <li><kbd>MySQL</kbd> sur le port <strong>3306</strong> (<kbd>TCP</kbd>)</li>
+                    </ul>
+                    <div class="byline">
+                        <div class="classy">
+                            <em>cf.</em> <a href="https://fr.wikipedia.org/wiki/Liste_de_ports_logiciels">Liste de ports logiciels</a> sur wikipédia
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h4>La couche application contient de</h4>
+                    <h3>nombreux programmes et protocoles</h3>
+                    <div class="byline">
+                        <div class="classy">on va en détailler rapidement certains, et terminer par le plus important</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h3>SSH</h3>
+                    <h4>port 22, TCP</h4>
+                    <div class="byline">
+                        <div class="classy">à la fois un programme et un protocole</div>
+                    </div>
+                    <h4>
+                        permet de se connecter à distance à un ordinateur,<br />
+                        une fois connectés, tous les échanges sont chiffrés
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; ssh</div>
+                    </div>
+                    <h4>on peut utiliser SSH pour</h4>
+                    <h3>sécuriser</h3>
+                    <h4>une autre application, <em>via</em> un <strong>tunnel ssh</strong></h4>
+                    <div class="byline">
+                        <div class="classy">par exemple <kbd>POP3</kbd> via <kbd>ssh</kbd></div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; ssh</div>
+                    </div>
+                    <h4>pour initier une connexion ssh, on peut utiliser</h4>
+                    <h3>un mot de passe</h3>
+                    <h4>ou</h4>
+                    <h3>l'authentifications par clés</h3>
+                    <div class="byline">
+                        <div class="classy">(on en reparlera plus tard)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h3>POP3</h3>
+                    <h5>(Post Office Control, version 3)</h5>
+                    <h4>port 110, TCP ou port 995, TCP (si utilisé avec <kbd>SSH</kbd>)</h4>
+                    <div class="byline"></div>
+                    <h4>
+                        permet de récupérer des emails sur un serveur,<br />
+                        il ne sont généralement plus sur le serveur après la récupération
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h3>IMAP</h3>
+                    <h5>(Interactive Message Access Protocol)</h5>
+                    <h4>port 143, TCP ou port 993, TCP (si utilisé avec <kbd>SSL</kbd>)</h4>
+                    <div class="byline"></div>
+                    <h4>
+                        permet de consulter des emails sur un serveur,<br />
+                        qui restent donc sur le serveur
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h3>SMTP</h3>
+                    <h5>(Simple Mail Transfer Protocol)</h5>
+                    <h4>port 25, TCP ou port 465, TCP (si utilisé avec <kbd>SSL</kbd>)</h4>
+                    <div class="byline"></div>
+                    <h4>permet d'envoyer des emails sur un serveur</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; SMTP</div>
+                    </div>
+                    <h4>la configuration d'un serveur SMTP est <em>de plus en plus</em> complexe</h4>
+                    <div class="byline">
+                        <div class="classy">il vaut mieux passer par des services externes (Mandrill, Mailgun, …)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h3>FTP</h3>
+                    <h5>(File Transfer Protocol)</h5>
+                    <h4>port 21, TCP (commandes) &amp; port 20, TCP (données)</h4>
+                    <div class="byline"></div>
+                    <h4>permet d'envoyer/recevoir/modifier des fichiers sur un serveur</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; FTP</div>
+                    </div>
+                    <h4>FTP a deux variantes sécurisées :</h4>
+                    <h3>FTPS (avec SSL/TLS)</h3>
+                    <h3>SFTP (avec SSH)</h3>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; FTP</div>
+                    </div>
+                    <h4>FTP suit le modèle</h4>
+                    <h3>client/serveur</h3>
+                    <div class="byline">
+                        <div class="classy">et peut s'utiliser de deux façons différentes…</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; FTP</div>
+                    </div>
+                    <h3>Le mode <em>passif</em></h3>
+                    <h4>(le client ouvre la connexion, le serveur choisit le port de transfert de données et le client s'y connecte)</h4>
+                    <div class="byline">
+                        <div class="classy">plus pratique dans la plupart des cas, le serveur n'établit pas de connexion</div>
+                    </div>
+                    <img src="img/FTP_mode_passif.png" alt="illustration du mode passif" style="border: 20px solid white;" />
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; FTP</div>
+                    </div>
+                    <h3>Le mode <em>actif</em></h3>
+                    <h4>(le client ouvre la connexion, le serveur choisit le port de transfert de données et se connecte au client)</h4>
+                    <div class="byline">
+                        <div class="classy">peut poser problème si le client n'accepte pas la connexion (firewall mal configuré)</div>
+                    </div>
+                    <img src="img/FTP_mode_actif.png" alt="illustration du mode actif" style="border: 20px solid white;" />
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; FTP</div>
+                    </div>
+                    <h4>FTP peut s'utiliser <em>via</em></h4>
+                    <h3>la ligne de commande</h3>
+                    <h4>ou</h4>
+                    <h3>une interface graphique</h3>
+                    <div class="byline">
+                        <div class="classy">mais…</div>
+                    </div>
+                    <h4>faire du FTP en ligne de commande, c'est chiant comme un jour sans pain</h4>
+                    <div class="byline">
+                        <div class="classy">(on creusera l'utilisation du FTP lors d'un prochain cours)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-three">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application</div>
+                    </div>
+                    <h3>HTTP</h3>
+                    <h5>(HyperText Transfer Protocol)</h5>
+                    <h4>port 80, TCP ou port 443, TCP (HTTPS, avec SSL/TLS)</h4>
+                    <div class="byline"></div>
+                    <h4>
+                        permet d'envoyer des requêtes à un serveur<br />
+                        pour consulter les données correspondantes
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP</div>
+                    </div>
+                    <h4>HTTP fonctionne selon le modèle</h4>
+                    <h3>client/serveur</h3>
+                    <div class="byline"></div>
+                    <h4>le client effectue une</h4>
+                    <h3>requête</h3>
+                    <h4>à laquelle le serveur renvoie une</h4>
+                    <h3>réponse</h3>
+                    <div class="byline">
+                        <div class="classy">(cette réponse est accompagnée d'un type pour aider son interprétation)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Requête</div>
+                    </div>
+                    <h4>Une requête HTTP consiste en :</h4>
+                    <ul>
+                        <li>une <kbd>URL</kbd>, adresse de la ressource sur le serveur</li>
+                        <li>une <em>méthode</em> (<kbd>method</kbd>), qui précise le type de la requête</li>
+                        <li>une série d'<em>en-têtes</em> (<kbd>headers</kbd>), qui fournissent des informations annexes sur la requête</li>
+                        <li>un éventuel paquet de données (<kbd>body</kbd>), associées à la requête</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Réponse</div>
+                    </div>
+                    <h4>Ce à quoi le serveur retourne une réponse, qui consiste en :</h4>
+                    <ul>
+                        <li>un <kbd>status</kbd>, code qui indique l'état de la prise en charge de la requête</li>
+                        <li>une série d'<em>en-têtes</em> (<kbd>headers</kbd>), qui fournissent des informations annexes sur la réponse, dont un <strong>type <kbd>MIME</kbd></strong> qui spécifie le type de réponse envoyé</li>
+                        <li>un éventuel paquet de données (<kbd>body</kbd>), qui forment la réponse</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h4>Il existe toute une série de méthodes dans le protocole HTTP</h4>
+                    <div class="byline">
+                        <div class="classy">les plus connues sont <kbd>GET</kbd> et <kbd>POST</kbd></div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h3><kbd>GET</kbd></h3>
+                    <h4>Demande une ressource</h4>
+                    <div class="byline">
+                        <div class="classy">(la requête <em>devrait</em> être sans effet sur la ressource)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h3><kbd>HEAD</kbd></h3>
+                    <h4>Demande uniquement les <em>en-têtes</em> (<kbd>headers</kbd>) d'une ressource</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h3><kbd>POST</kbd></h3>
+                    <h4>Envoie des données au serveur pour créer une nouvelle ressource</h4>
+                    <div class="byline"></div>
+                    <h4>
+                        À cause de mauvaises implémentations<br />
+                        elle a longtemps été la seule méthode utilisable<br />
+                        pour <em>modifier</em> une ressource,<br />
+                        au détriment de <kbd>PUT</kbd>, <kbd>PATCH</kbd> et <kbd>DELETE</kbd>.
+                    </h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h3><kbd>PUT</kbd></h3>
+                    <h4>Permet de remplacer ou ajouter une ressource</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h3><kbd>PATCH</kbd></h3>
+                    <h4>Permet de faire une modification <em>partielle</em> d'une ressource</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Méthodes</div>
+                    </div>
+                    <h3><kbd>DELETE</kbd></h3>
+                    <h4>Permet de supprimer une ressource du serveur</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Codes de statut</div>
+                    </div>
+                    <h4>Lors de la réponse d'un serveur à une requête,<br />un <strong>code de statut</strong> est envoyé pour indiquer l'<em>état</em> de la réponse</h4>
+                    <h3>Ce code est un nombre de 3 chiffres</h3>
+                    <h4>suivi d'un cours message</h4>
+                    <div class="byline">
+                        <div class="classy">il en existe pas mal, on va citer les plus fréquents</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Codes de statut</div>
+                    </div>
+                    <h4>Les codes <kbd>1XX</kbd> signalent une requête en cours de traitement</h4>
+                    <div class="byline">
+                        <div class="classy">(on va clairement pas en voir)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Codes de statut</div>
+                    </div>
+                    <h4>Les codes <kbd>2XX</kbd> signalent une requête traitée avec succès</h4>
+                    <div class="byline">
+                        <div class="classy">parmi lesquels :</div>
+                    </div>
+                    <ul>
+                        <li><kbd>200 - OK</kbd>, requête traitée avec succès</li>
+                        <li><kbd>201 - Created</kbd>, requête traitée avec succès et création d'une ressource</li>
+                        <li><kbd>204 - No Content</kbd>, requête traitée avec succès mais sans contenu dans la réponse</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Codes de statut</div>
+                    </div>
+                    <h4>Les codes <kbd>3XX</kbd> signalent une ressource qui a été déplacée</h4>
+                    <div class="byline">
+                        <div class="classy">parmi lesquels :</div>
+                    </div>
+                    <ul>
+                        <li><kbd>301 - Moved Permanently</kbd>, ressource déplacée de façon permanente</li>
+                        <li><kbd>302 - Moved Temporarily</kbd>, ressource déplacée de façon temporaire</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Codes de statut</div>
+                    </div>
+                    <h4>Les codes <kbd>4XX</kbd> signalent une erreur du client</h4>
+                    <div class="byline">
+                        <div class="classy">parmi lesquels :</div>
+                    </div>
+                    <ul>
+                        <li><kbd>400 - Bad Request</kbd>, requête erronée</li>
+                        <li><kbd>401 - Unauthorized</kbd>, une authentification est nécéssaire pour accéder à la ressource</li>
+                        <li><kbd>403 - Forbidden</kbd>, l'accès à la ressource est interdit</li>
+                        <li><kbd>404 - Not Found</kbd>, ressource introuvable</li>
+                        <li><kbd>405 - Method Not Allowed</kbd>, méthode non-autorisée</li>
+                        <li><kbd>418 - I'm a teapot</kbd>, le serveur est une théière</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP &rsaquo; Codes de statut</div>
+                    </div>
+                    <h4>Les codes <kbd>5XX</kbd> signalent une erreur du serveur</h4>
+                    <div class="byline">
+                        <div class="classy">parmi lesquels :</div>
+                    </div>
+                    <ul>
+                        <li><kbd>500 - Internal Server Error</kbd>, erreur interne du serveur</li>
+                        <li><kbd>502 - Bad Gateway</kbd>, erreur entre le serveur et l'un des serveurs intermédiaires</li>
+                        <li><kbd>504 - Gateway Time-out</kbd>, temps d'attente écoulé entre le serveur et l'un des serveurs intermédiaires</li>
+                    </ul>
+                    <div class="byline"></div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-two">
+                <div class="content">
+                    <div class="byline">
+                        <div class="classy">Protocoles de la couche application &rsaquo; HTTP</div>
+                    </div>
+                    <h4>
+                        Il existe un type d'architecture de serveur qui se base sur<br />
+                        une <em>bonne</em> utilisation des méthodes, URL et codes<br />
+                        pour structurer l'accès aux ressources
+                    </h4>
+                    <div class="byline">
+                        <div class="classy">(vous en reparlerez lors du cours de développement côté serveur)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-bespoke-state="pattern-one">
+                <div class="content">
+                    <div class="byline"></div>
+                    <h4>fin de la seconde partie</h4>
+                    <div class="byline"></div>
+                </div>
+            </section>
+        </article>
+        <script type="text/javascript">
+          WebFontConfig = { google: { families: [ 'Tauri::latin', 'Alegreya:400italic:latin' ] } };
+          (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+          })();
+        </script>
+        <script src="../_shared/js/bespoke.js"></script>
+        <script src="../_shared/js/deck.js"></script>
+    </body>
+</html>
