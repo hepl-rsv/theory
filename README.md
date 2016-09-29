@@ -18,6 +18,7 @@ Ils sont rédigés en utilisant [BespokeJS](https://github.com/bespokejs/bespoke
 
 * Partie 1 : [réseaux, adressage, noms de domaines](./part-one)
 * Partie 2 : [modèles, transports & protocoles](./part-two)
+* Partie 3 : [serveurs & hébergements](./part-three)
 
 * * *
 
